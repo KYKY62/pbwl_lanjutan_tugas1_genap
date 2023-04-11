@@ -1,37 +1,85 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
 }
 
 .container {
-    width: 1080px;
-    margin: auto;
+  width: 1080px;
+  margin: auto;
 }
 
 header img {
-    width: 100%;
+  width: 100%;
 }
 
 nav ul {
-    list-style-type: none;
-    background-color: #9E3600;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  background-color: #9e3600;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    float: left;
+  float: left;
 }
 
 nav ul li > a {
-    padding: 10px 20px;
-    display: block;
-    text-decoration: none;
-    color: ivory;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: ivory;
 }
 
 nav ul li > a:hover {
-    background-color: #E59C29;
-    color: #000000;
+  background-color: #e59c29;
+  color: #000000;
+}
+
+.container footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #9e3600;
+  color: #ffffffff;
+}
+
+.addKategori {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.editButton {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.deleteButton {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
 }

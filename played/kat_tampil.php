@@ -6,8 +6,8 @@ $kat = new Kategori();
 $rows = $kat->tampilTrack();
 
 ?>
-
-<a href="kat_input.php">Tambah Kategori</a>
+<link rel="stylesheet" href="../layouts/assets/css/style.css">
+<a href="kat_input.php" class="addKategori">Tambah Kategori</a>
 <table>
     <tr>
         <td>No</td>
@@ -25,8 +25,8 @@ $rows = $kat->tampilTrack();
             <td><?php echo $row['trc_name']; ?></td>
             <td><?php echo $row['ply_played']; ?></td>
 
-            <td><a href="kat_edit.php?id=<?php echo $row['ply_id']; ?>">Edit</a></td>
-            <td><a href="kat_delete.php?id=<?php echo $row['ply_id']; ?>">Delete</a></td>
+            <td><a class="editButton" href="kat_edit.php?id=<?php echo $row['ply_id']; ?>">Edit</a></td>
+            <td><a class="deleteButton" href="kat_delete.php?id=<?php echo $row['ply_id']; ?>">Delete</a></td>
         </tr>
     <?php
         $no++;
