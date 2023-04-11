@@ -8,7 +8,7 @@ $rows = $kat->tampil();
 ?>
 <link rel="stylesheet" href="layouts/assets/css/style.css">
 <a href="kat_input.php" class="addKategori">Tambah Kategori</a>
-<table>
+<table class="tableTampil">
     <tr>
         <td>No</td>
         <td>Track Name</td>

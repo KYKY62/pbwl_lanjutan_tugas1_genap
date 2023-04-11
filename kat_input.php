@@ -16,8 +16,8 @@ $rowArtist = $kat->selectArtist();
             <td>
                 <select id="trc_id_album" name="trc_id_album">
                     <option>Pilih Id Album...</option>
-                    <?php foreach ($rows as $row) {
-                        echo "<option value=$row[art_id]>$row[art_name]</option>";
+                    <?php foreach ($rowArtist as $row) {
+                        echo "<option value=$row[alb_id]>$row[alb_name]</option>";
                     }  ?>
             </td>
         </tr>

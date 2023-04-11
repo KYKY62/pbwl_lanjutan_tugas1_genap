@@ -35,7 +35,7 @@ class Kategori extends Koneksi
     }
     public function selectArtist()
     {
-        $sql = "SELECT * FROM tb_artist";
+        $sql = "SELECT * FROM tb_album";
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
 

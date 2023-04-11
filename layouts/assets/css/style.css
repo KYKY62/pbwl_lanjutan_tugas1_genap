@@ -83,3 +83,7 @@ nav ul li > a:hover {
   font-size: 16px;
   cursor: pointer;
 }
+
+.tableTampil {
+  margin-bottom: 50px;
+}
