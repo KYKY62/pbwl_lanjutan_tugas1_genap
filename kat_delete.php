@@ -11,4 +11,4 @@ $rows = $kat->delete($id);
 
 Data berhasil dihapus!
 
-<a href="index.php">Kembali</a>
+<a href="track.php">Kembali</a>

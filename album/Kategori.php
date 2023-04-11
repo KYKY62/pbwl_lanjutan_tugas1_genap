@@ -6,7 +6,7 @@ class Kategori extends Koneksi
 {
     public function tampil()
     {
-        $sql = "SELECT * FROM tb_artist";
+        $sql = "SELECT * FROM tb_album,tb_artist WHERE tb_artist.art_id= tb_album.alb_id_artist";
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
 
@@ -20,7 +20,21 @@ class Kategori extends Koneksi
     }
     public function tampilAlbum()
     {
-        $sql = "SELECT * FROM tb_album,tb_artist WHERE tb_artist.art_id =tb_album.alb_id_artist";
+        $sql = "SELECT * FROM tb_artist,tb_album WHERE tb_artist.art_id = tb_album.alb_id_artist";
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute();
+
+        $data = [];
+
+        while ($rows = $stmt->fetch()) {
+            $data[] = $rows;
+        }
+
+        return $data;
+    }
+    public function Album()
+    {
+        $sql = "SELECT * FROM tb_artist ";
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
 
@@ -48,9 +62,9 @@ class Kategori extends Koneksi
     public function edit($id)
     {
 
-        $sql = "SELECT * FROM tb_track WHERE trc_id=:trc_id";
+        $sql = "SELECT * FROM tb_album WHERE alb_id=:alb_id";
         $stmt = $this->db->prepare($sql);
-        $stmt->bindParam(":trc_id", $id);
+        $stmt->bindParam(":alb_id", $id);
         $stmt->execute();
 
         $row = $stmt->fetch();

@@ -3,7 +3,7 @@
 require_once "Kategori.php";
 
 $kat = new Kategori();
-$rows = $kat->tampilAlbum();
+$rows = $kat->tampil();
 
 ?>
 <link rel="stylesheet" href="../layouts/assets/css/style.css">

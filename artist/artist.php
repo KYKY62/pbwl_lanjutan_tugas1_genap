@@ -18,10 +18,11 @@
 
         <nav>
             <ul>
-                <li><a href="../index.php">Track</a></li>
+                <li><a href="../track.php">Track</a></li>
                 <li><a href="../album/album.php">Album</a></li>
                 <li><a href="../played/played.php">Played</a></li>
                 <li><a href="artist.php">Artist</a></li>
+                <li><a href="../index.php">Keluar</a></li>
             </ul>
         </nav>
 
